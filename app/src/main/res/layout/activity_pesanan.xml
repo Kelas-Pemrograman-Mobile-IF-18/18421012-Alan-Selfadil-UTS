@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#5FFB17"
+    tools:context=".user.PesananActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/gas4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:text="Melakukan Pesanan Gas Elpiji"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Jenis Gas Elpiji"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+            android:id="@+id/edtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Jumlah Pesanan"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/edtjumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Waktu Penerimaan Pesanan"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/edtJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Tempat Menerima Pesanan"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/edtTempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Atas Nama"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/edtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:labelText="Harga"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF"
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/edtharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Pesan"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="Pesan"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
