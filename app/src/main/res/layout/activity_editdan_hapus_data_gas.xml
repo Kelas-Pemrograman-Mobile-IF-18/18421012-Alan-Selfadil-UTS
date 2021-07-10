@@ -40,7 +40,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/blue"
                     android:gravity="center"
-                    android:text="Melakukan Pesanan Gas Elpiji"/>
+                    android:text="Melakukan Edit dan Hapus Pesanan"/>
 
             </LinearLayout>
 
@@ -124,7 +124,7 @@
                     >
 
                     <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-                        android:id="@+id/edtAlamat"
+                        android:id="@+id/edttempat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -165,19 +165,20 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="Pesan"
-                    android:id="@+id/btnpesan"
+                    android:text="Ubah"
+                    android:id="@+id/btnUbah"
                     android:textStyle="bold" />
 
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="75dp"
-                    android:text="Kembali"
-                    android:id="@+id/btnkembali"
+                    android:text="Hapus"
+                    android:id="@+id/btnhapus"
                     android:textStyle="bold"/>
 
             </LinearLayout>
+
 
         </LinearLayout>
 

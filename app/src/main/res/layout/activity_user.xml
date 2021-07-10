@@ -50,14 +50,14 @@
                         android:layout_height="100dp"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/btnPesan">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:orientation="vertical"
-                            android:id="@+id/btnPesan">
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="64dp"
@@ -97,14 +97,14 @@
                         android:layout_height="100dp"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/btnProfil">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:orientation="vertical"
-                            android:id="@+id/btnProfil">
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="64dp"
@@ -144,14 +144,14 @@
                         android:layout_height="100dp"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/btnHistory">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:orientation="vertical"
-                            android:id="@+id/btnHistory">
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="64dp"
@@ -191,14 +191,14 @@
                         android:layout_height="100dp"
                         android:clickable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp">
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/btnKeluar">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:orientation="vertical"
-                            android:id="@+id/btnKeluar">
+                            android:orientation="vertical">
 
                             <ImageView
                                 android:layout_width="64dp"

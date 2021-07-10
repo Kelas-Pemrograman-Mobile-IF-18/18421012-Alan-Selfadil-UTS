@@ -7,212 +7,226 @@
     android:orientation="vertical"
     tools:context=".user.ProfilActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="450dp">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <LinearLayout
-            android:background="@drawable/gradientbackground"
             android:layout_width="match_parent"
-            android:layout_height="420dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <ImageView
-                android:layout_marginTop="45dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/profil" />
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+                <LinearLayout
+                    android:background="@drawable/gradientbackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/profil" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="21sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="350dp"
+                            android:layout_height="150dp"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/terima"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="bottom"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="67dp"
+                                    android:layout_height="69dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/paket1" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:textStyle="bold"
+                                    android:textSize="30dp"
+                                    android:textColor="#73D370"
+                                    android:gravity="center"
+                                    android:text="100" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:textColor="#73D370"
+                                    android:textSize="15dp"
+                                    android:text="Terima Pesanan" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/pengirim"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="67dp"
+                                    android:layout_height="69dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/paket2" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:textStyle="bold"
+                                    android:textSize="30dp"
+                                    android:textColor="@color/blue"
+                                    android:gravity="center"
+                                    android:text="200" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/blue"
+                                    android:textSize="15dp"
+                                    android:text="Pengiriman" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/batal"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="end"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="67dp"
+                                    android:layout_height="69dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/paket3" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:textStyle="bold"
+                                    android:textSize="30dp"
+                                    android:textColor="@color/red"
+                                    android:gravity="center"
+                                    android:text="100" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/red"
+                                    android:textSize="15dp"
+                                    android:text="Batal Pesanan" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:text="User"
-                android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="21sp"/>
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/message"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="Alamat Tempat Tinggal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/handphone"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="+123 456 789"/>
+                </LinearLayout>
 
                 <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:clipToPadding="false"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/show"/>
+                    <TextView
+                        android:textStyle="bold"
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="350dp"
-                        android:layout_height="150dp"
-                        android:clickable="true"
-                        android:foreground="?attr/selectableItemBackground"
-                        app:cardCornerRadius="10dp">
-
-                        <LinearLayout
-                            android:id="@+id/terima"
-                            android:layout_width="120dp"
-                            android:layout_height="150dp"
-                            android:layout_gravity="bottom"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="67dp"
-                                android:layout_height="69dp"
-                                android:padding="10dp"
-                                android:src="@drawable/paket1" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:textStyle="bold"
-                                android:textSize="30dp"
-                                android:textColor="#73D370"
-                                android:gravity="center"
-                                android:text="100" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:gravity="center"
-                                android:textColor="#73D370"
-                                android:textSize="15dp"
-                                android:text="Terima Pesanan" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/pengirim"
-                            android:layout_width="120dp"
-                            android:layout_height="150dp"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="67dp"
-                                android:layout_height="69dp"
-                                android:padding="10dp"
-                                android:src="@drawable/paket2" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:textStyle="bold"
-                                android:textSize="30dp"
-                                android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:text="200" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:gravity="center"
-                                android:textColor="@color/blue"
-                                android:textSize="15dp"
-                                android:text="Pengiriman" />
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/batal"
-                            android:layout_width="120dp"
-                            android:layout_height="150dp"
-                            android:layout_gravity="end"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="67dp"
-                                android:layout_height="69dp"
-                                android:padding="10dp"
-                                android:src="@drawable/paket3" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:textStyle="bold"
-                                android:textSize="30dp"
-                                android:textColor="@color/red"
-                                android:gravity="center"
-                                android:text="100" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:gravity="center"
-                                android:textColor="@color/red"
-                                android:textSize="15dp"
-                                android:text="Batal Pesanan" />
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="Histori Pesanan"/>
                 </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/message"/>
-            <TextView
-                android:textStyle="bold"
-                android:layout_gravity="center_vertical"
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="Alamat Tempat Tinggal"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_marginLeft="7dp"
-                android:src="@drawable/handphone"/>
-            <TextView
-                android:textStyle="bold"
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="15dp"
-                android:text="+123 456 789"/>
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:text="Kembali"
+                android:id="@+id/btnkembali"
+                android:textColor="#fff" />
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/show"/>
-            <TextView
-                android:textStyle="bold"
-
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="Histori Pesanan"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
-        android:text="Kembali"
-        android:textColor="#fff" />
+    </ScrollView>
 
 </LinearLayout>
